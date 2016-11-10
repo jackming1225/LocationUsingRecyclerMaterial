@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/border_shadow"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+
+    <TextView
+        android:id="@+id/tNameDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="name" />
+
+
+    <TextView
+        android:id="@+id/tDistrictDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tNameDetails"
+        android:textAlignment="center"
+        android:text="district" />
+
+
+    <TextView
+        android:id="@+id/tStateDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tDistrictDetails"
+        android:textAlignment="center"
+        android:text="state" />
+
+
+    <TextView
+        android:id="@+id/tDistanceDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tStateDetails"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:text="distance" />
+
+    <!--<ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_toRightOf="@id/tDistanceDetails"
+        android:layout_below="@id/tDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar2"
+        android:indeterminateDrawable="@drawable/progess_drawable_red"
+
+        android:layout_alignStart="@id/tDistance"
+        />-->
+
+</RelativeLayout>

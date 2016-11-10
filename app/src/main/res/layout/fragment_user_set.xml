@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ming.locationusingrecyclermaterial.UserSetFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="105dp"
+        android:background="#f6cd61"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+       <!-- <EditText
+            android:id="@+id/eText"
+            android:layout_width="243dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.92"
+            android:hint=" ENTER LOCATION NAME"/>-->
+        <AutoCompleteTextView
+            android:id="@+id/eText"
+            android:layout_width="243dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.92"
+            android:hint=" ENTER LOCATION NAME"/>
+
+        <Button
+            android:id="@+id/getB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="GO"
+            android:onClick="getGeoLatLongUsingName"
+            />
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp"
+        android:background="@color/recyclerBack"
+        android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+
+
+
+
+</FrameLayout>
